@@ -1,0 +1,38 @@
+:root {
+  color-scheme: dark;
+  --fondo: #0b0714; --superficie: #140e22; --linea: #2a2140;
+  --texto: #f3f1fa; --suave: #b3abc8; --cian: #4fd6f0; --magenta: #f04fd8; --verde: #4ff0b0;
+  --sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--texto); font: 17px/1.65 var(--sans); -webkit-font-smoothing: antialiased;
+  background: radial-gradient(circle at 50% -10%, rgba(240, 79, 216, .12), transparent 34rem),
+              radial-gradient(circle at 10% 30%, rgba(79, 214, 240, .08), transparent 30rem), var(--fondo);
+}
+a { color: var(--cian); text-underline-offset: 3px; }
+a:hover { color: var(--verde); }
+.envoltura { width: min(100% - 32px, 760px); margin-inline: auto; }
+header { padding: 56px 0 24px; text-align: center; }
+header img { width: 168px; height: 168px; }
+header.pequena { padding: 28px 0 8px; display: flex; align-items: center; gap: 12px; text-align: left; }
+header.pequena img { width: 52px; height: 52px; }
+header.pequena a { color: var(--texto); font-weight: 800; font-size: 1.25rem; text-decoration: none; letter-spacing: -.01em; }
+h1 { margin: 8px 0 0; font-size: clamp(2.6rem, 8vw, 4rem); line-height: 1; letter-spacing: -.04em;
+     background: linear-gradient(90deg, var(--cian), var(--magenta)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lema { margin: 14px auto 0; max-width: 520px; color: var(--suave); font-size: 1.15rem; }
+h2 { margin: 0 0 8px; font-size: 1.3rem; letter-spacing: -.02em; }
+h3 { margin: 28px 0 6px; font-size: 1.05rem; }
+.tarjeta { margin: 20px 0; padding: 26px 28px; border: 1px solid var(--linea); border-radius: 20px; background: var(--superficie); }
+.tarjeta p, .tarjeta ul { margin: 0 0 12px; color: var(--suave); }
+.tarjeta p:last-child, .tarjeta ul:last-child { margin-bottom: 0; }
+.tarjeta strong { color: var(--texto); }
+.cuentas { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; list-style: none; }
+.cuentas li { padding: 6px 14px; border: 1px solid var(--linea); border-radius: 999px; color: var(--texto); font-weight: 650; font-size: .95rem; }
+.legal h1 { font-size: clamp(2rem, 6vw, 2.6rem); }
+.legal .fecha { color: var(--suave); margin: 6px 0 24px; }
+.legal section { margin-bottom: 8px; }
+.legal p, .legal li { color: var(--suave); }
+.legal hr { margin: 48px 0; border: 0; border-top: 1px solid var(--linea); }
+footer { padding: 32px 0 48px; color: var(--suave); font-size: .9rem; text-align: center; }
+footer a { margin: 0 8px; }
